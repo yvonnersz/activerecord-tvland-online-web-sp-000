@@ -4,9 +4,10 @@ class Actor < ActiveRecord::Base
 
   def full_name
     "#{self.first_name} #{self.last_name}"
+    binding.pry
+
   end
 
   def list_roles
-    binding.pry
   end
 end
